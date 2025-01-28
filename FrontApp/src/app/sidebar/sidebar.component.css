@@ -1,0 +1,32 @@
+.sidebar {
+    margin-top: 1em;
+    background: whitesmoke;
+    width: 15vw;
+    height: 65vh;
+    -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar div,
+.sidebar button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    margin-left: 0;
+}
+
+.brand div,
+.size div {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    margin: auto 5em;
+}

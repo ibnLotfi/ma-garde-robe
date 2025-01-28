@@ -1,0 +1,44 @@
+.footer {
+    border: none;
+    background: rgba(0, 0, 0, 0.855);
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: sticky;
+    bottom: 0;
+    -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+.footer::-webkit-scrollbar {
+    display: none;
+}
+
+
+.top-footer, .bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-footer a, h3, p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-decoration: none
+}
+
+.top-footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer a {
+    color: white;
+}
+
+

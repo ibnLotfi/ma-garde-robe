@@ -1,0 +1,12 @@
+<div class="shopping-list">
+
+    <app-sidebar></app-sidebar>
+
+    <div class="shopping-list-display">
+        <h2>Men</h2>
+        @for(prod of this.products; track $index){
+            <app-shopping-card [product]="prod"></app-shopping-card>
+        }
+    </div>
+
+</div>

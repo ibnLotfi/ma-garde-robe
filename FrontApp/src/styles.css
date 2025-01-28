@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+    color: black;
+}
+
+.regular-black {
+    width: 10em;
+    color: white;
+    background: black;
+    padding: 0.5em;
+    border: none;
+}
+
+.regular-green {
+    width: 10em;
+    color: white;
+    background: rgb(1, 104, 1);
+    padding: 0.5em;
+    border: none;
+}
+
+
+/* body {
+    overflow: hidden;
+} */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

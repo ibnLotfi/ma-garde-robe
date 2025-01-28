@@ -1,0 +1,25 @@
+.shopping-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.shopping-list-display {
+    width: 100%;
+    padding: 1em;
+    height: 75vh;
+    overflow: scroll;
+}
+
+.shopping-list-display h2 {
+    text-align: center;
+}
+
+.shopping-list-display::-webkit-scrollbar {
+    display: none;
+}
+
+.shopping-list-display {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

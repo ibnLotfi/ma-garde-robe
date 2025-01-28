@@ -1,0 +1,35 @@
+.Topbar {
+    z-index: 5;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+.topbar-navlinks ul {
+    list-style: none;
+    width: 100%;
+}
+
+.topbar-navlinks ul li {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+.topbar-navlinks ul li a {
+    text-decoration: none;
+    text-transform: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.topbar-navlinks ul li a:hover {
+    transform: scale(2);
+    color: red;
+}
