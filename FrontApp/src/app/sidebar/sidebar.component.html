@@ -1,12 +1,15 @@
 <div class="sidebar">
-    <div>
+    <div class="categories">
         <h3>Category</h3>
-        <a href="">Tee Shirt</a>
-        <a href="">Pentalon</a>
-        <a href="">Chemise</a>
-        <a href="">Veste</a>
-        <a href="">Sac</a>
-        <a href="">Chaussures</a>
+        <ul>
+            @for(cat of this.categories; track $index){
+            <li>
+                <input type="checkbox" [id]="cat" [value]="cat">
+                <label [for]="cat">{{cat}}</label>
+            </li>
+            }
+        </ul>
+
     </div>
 
     <div>
@@ -16,48 +19,51 @@
 
     <div class="brand">
         <h3>Brand</h3>
-        <div>
-            <input type="checkbox" id="Adidas">
-            <label for="scales">Adidas</label>
-        </div>
-        <div>
-            <input type="checkbox" id="Nike">
-            <label for="scales">Nike</label>
-
-        </div>
-        <div>
-            <input type="checkbox" id="Lacoste">
-            <label for="scales">Lacoste</label>
-
-        </div>
-        <div>
-            <input type="checkbox" id="Reebok">
-            <label for="scales">Reebok</label>
-        </div>
+        <ul>
+            @for(brand of this.brands; track $index){
+            <li>
+                <input type="checkbox" [id]="brand" [value]="brand">
+            <label [for]="brand">{{brand}}</label>
+            </li>
+            }
+        </ul>
     </div>
 
     <div class="size">
         <h3>Size</h3>
-        <div>
-            <input type="checkbox" id="S">
-            <label for="scales">S</label>
-        </div>
-        <div>
-            <input type="checkbox" id="M">
-            <label for="scales">M</label>
+        <ul>
+            @for(size of this.sizes; track $index){
+            <li>
+                <input type="checkbox" [id]="size" [value]="size">
+            <label [for]="size">{{size}}</label>
+            </li>
+            }
+        </ul>
+    </div>
 
-        </div>
-        <div>
-            <input type="checkbox" id="L">
-            <label for="scales">L</label>
+    <div class="materials">
+        <h3>Material</h3>
+        <ul>
+            @for(material of this.materials; track $index){
+            <li>
+                <input type="checkbox" [id]="material" [value]="material">
+            <label [for]="material">{{material}}</label>
+            </li>
+            }
+        </ul>
+    </div>
 
-        </div>
+    <div class="colors">
+        <h3>Colors</h3>
         <div>
-            <input type="checkbox" id="XL">
-            <label for="scales">XL</label>
+            @for(color of this.colors; track $index){
+            <a href="" class="circle" [ngStyle]="{ 'background-color': color.value }"></a>
+            }
         </div>
     </div>
 
-    <button class="regular-black">Reset</button>
+    <div class="reset">
+        <button class="regular-black">Reset</button>
+    </div>
 
 </div>

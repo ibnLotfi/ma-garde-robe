@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-list',
-  imports: [SidebarComponent, ShoppingCardComponent, HeaderComponent],
+  imports: [SidebarComponent, ShoppingCardComponent],
   templateUrl: './shopping-list.component.html',
   styleUrl: './shopping-list.component.css'
 })
