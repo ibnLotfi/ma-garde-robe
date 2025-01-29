@@ -6,27 +6,44 @@
     -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    overflow: scroll;
+
 }
 
-.sidebar div,
-.sidebar button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sidebar div {
+    display: block;
+    margin-left: 3em;
 }
 
-.sidebar a {
-    text-decoration: none;
+.categories, .brand, .materials, .size, .colors {
+    display: inline-block;
     margin-left: 0;
 }
 
-.brand div,
-.size div {
-    display: inline-block;
+.categories ul, .brand ul, .materials ul, .size ul {
+    margin-top: 0px;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+    list-style: none;
 }
 
-button {
-    display: block;
-    margin: auto 5em;
+.reset {
+   margin-top: 1em;
 }
+
+
+.colors div {
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    }
+
+.circle {
+    width: 20px; /* Largeur du cercle */
+    height: 20px; /* Hauteur du cercle */
+    border-radius: 50%; /* Cercle parfait */
+    border: 1px solid #00000071; /* Bordure pour la visibilité */
+  }

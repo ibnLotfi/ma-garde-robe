@@ -3,6 +3,9 @@
 * {
     font-family: Roboto, sans-serif;
     color: black;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .regular-black {
