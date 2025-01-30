@@ -1,8 +1,17 @@
-<div class="shopping-card">
+<!-- <div class="shopping-card">
     <h5>{{this.product.title}}</h5>
     <img [src]="this.product.images[0].imageSrc" alt="">
     <p>{{this.product.description}}</p>
     <p>{{this.product.price | currency}}</p>
     <button class="regular-green">Add</button>
-</div>
+</div> -->
 
+<div class="shopping-card">
+    <img [src]="this.product.images[0].imageSrc" alt="">
+    <div>
+        <h4>{{this.product.title}}</h4>
+        <!-- <p>{{this.product.description}}</p> -->
+        <p>{{this.product.price | currency}}</p>
+        <button class="regular-green">Add</button>
+    </div>
+</div>

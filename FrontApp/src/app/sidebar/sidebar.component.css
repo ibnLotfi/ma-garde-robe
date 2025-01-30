@@ -1,13 +1,22 @@
 .sidebar {
     margin-top: 1em;
-    background: whitesmoke;
+    background: white;
     width: 15vw;
     height: 65vh;
-    -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
     overflow: scroll;
 
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .sidebar div {
@@ -29,6 +38,7 @@
 
 .reset {
    margin-top: 1em;
+   margin-bottom: 1em;
 }
 
 
@@ -47,3 +57,4 @@
     border-radius: 50%; /* Cercle parfait */
     border: 1px solid #00000071; /* Bordure pour la visibilité */
   }
+
