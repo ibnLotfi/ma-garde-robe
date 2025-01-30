@@ -3,7 +3,7 @@
     overflow: hidden;
     position: sticky;
     top: 0;
-    background: whitesmoke;
+    background: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

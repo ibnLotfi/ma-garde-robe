@@ -1,17 +1,23 @@
 .shopping-card {
-    margin-left: 2em;
-    width: 20em;
-    -webkit-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 2px 26px -8px rgba(0, 0, 0, 0.75);
+    background: white;
     display: inline-block;
-    height: 25em;
-    text-align: center;
-    margin-top: 2em;
-}
+    box-sizing: border-box;
+    margin: 10px;
+    -webkit-box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0.5px 0.5px 6.5px -2px rgba(0, 0, 0, 0.75);
+  }
+  
+  .shopping-card img {
+    width: 13vw; /* Largeur uniforme */
+    height: 12vw; /* Hauteur uniforme */
+    object-fit: cover; /* Gère la façon dont l'image s'adapte */
+  }
 
-.shopping-card img {
-    width: 60%;
-    max-height: 30%;
-    margin: auto;
-}
+  .shopping-card div h4, p, button{
+    display: block;
+    margin-left: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
