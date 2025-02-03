@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { BasketComponent } from './basket/basket.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 export const routes: Routes = [
   {
@@ -36,5 +37,9 @@ export const routes: Routes = [
     path: 'accessory',
     component : ShoppingListComponent,
     data: { 'title': 'Accessory'}
+  },
+  {
+    path: 'product/:id',
+    component: ProductDetailComponent,
   },
 ];

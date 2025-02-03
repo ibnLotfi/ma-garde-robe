@@ -1,0 +1,40 @@
+<div class="product-detail-container">
+    <div class="product-detail-top">
+
+        <div class="images">
+            
+            <div class="image-list">
+                @for(image of product.images; track $index){
+                    <img [src]="image.imageSrc" class="product-detail-image-list" (click)="this.activeImage = image.imageSrc">
+                }
+            </div>
+            
+            <div class="active-image-display">
+                <img [src]="this.activeImage" class="product-detail-active-image">
+            </div>
+        </div>
+    
+        <div class="product-infos">
+            <h1>{{this.product.title}}</h1>
+            <hr>
+            <p>{{this.product.price | currency}}</p>
+
+            <p *ngIf="this.product.brand"><span class="heavy">Marque :</span> {{this.product.brand.name}}</p>
+            <p *ngIf="this.product.material"><span class="heavy">Matière :</span> {{this.product.material.name}}</p>
+            <p *ngIf="this.product.color"><span class="heavy">Couleur :</span> {{this.product.color.name}}</p>
+            <p *ngIf="this.product.size"><span class="heavy">Taille : </span> {{this.product.size.name}}</p>
+            
+            <button class="regular-green">Ajouter</button>
+        </div>
+    
+    </div>
+    
+    <div class="product-detail-bottom">
+    
+        <div class="description">
+            <h3>Description</h3>
+            <p>{{this.product.description}}</p>
+        </div>
+        
+    </div>
+</div>

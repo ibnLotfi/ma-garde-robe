@@ -24,6 +24,10 @@
     border: none;
 }
 
+.rounded {
+    border-radius: 20px;
+}
+
 
 /* body {
     overflow: hidden;
