@@ -112,6 +112,9 @@ export const Materials: Material[] = [
       color: Colors[5], // Blue
       images: [
         { imageId: 4, imageSrc: "https://img01.ztat.net/article/spp-media-p1/d156c41177f24649bb390cbb8a2ce20f/059d0145a9d24fafa434e9b88e90ad24.jpg?imwidth=300" },
+        { imageId: 100, imageSrc: "https://cdn.kaporal.com/fr_fr/media/catalog/product/K/P/KP_IRISH_M7JDARNIN24H_B.jpg?format=imageGalleryNoRatio&width=710&height=undefined&size=1&extension=webp" },
+        { imageId: 101, imageSrc: "https://www.jules.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-core-master-catalog/default/dwdebba781/images/1006298_11234_V1.jpg?sw=1562&sh=1800&sm=fit" },
+        { imageId: 102, imageSrc: "https://www.jules.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-core-master-catalog/default/dw9573a3f0/images/1006298_11234_V8.jpg?sw=1562&sh=1800&sm=fit" },
       ],
       tags: [Tags[1], Tags[2]], // Tendance2024, Football
       isAccessory: false,
